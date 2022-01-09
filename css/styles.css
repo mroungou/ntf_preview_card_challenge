@@ -1,0 +1,13 @@
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+.main-box {
+  height: 90vh;
+  width: 80vw;
+  margin-top: 2.5rem;
+  margin-left: 2.3rem;
+  /* background-color: hsl(250, 60%, 15%); */
+  background-color: indianred;
+  border-radius: 15px;
+}
