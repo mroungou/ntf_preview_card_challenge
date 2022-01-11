@@ -18,13 +18,35 @@ body {
 }
 
 .nft-content .nft-image {
+  position: relative;
+}
+
+.nft-image > img,
+.nft-image .overlay {
   width: 100%;
   height: 100%;
   border-radius: 5%;
 }
 
-.nft-content .nft-image:hover {
-  background: hsl(178, 100%, 50%);
+.nft-image .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background: hsl(178deg 100% 50% / 31%);
+  opacity: 0;
+}
+
+.nft-image:hover .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.overlay > img {
+  transform: translate(0, 475%);
 }
 
 .nft-content h3 {
@@ -89,7 +111,7 @@ hr {
   height: auto;
   border: 1px white solid;
   border-radius: 50%;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 .nft-creator span {
