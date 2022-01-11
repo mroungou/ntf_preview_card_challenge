@@ -81,6 +81,7 @@ body {
 
 .nft-metrics .time-metrics {
   margin: 0 0 0 auto;
+  justify-content: flex-end;
 }
 
 .nft-metrics .nft-price,
